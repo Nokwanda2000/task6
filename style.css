@@ -1,0 +1,51 @@
+body{ 
+
+    height: 130vh;
+    background: linear-gradient( to bottom right, magenta, cyan);
+    align-items: center;
+    display: flex;
+    justify-content: center;  
+}
+
+#Circle{ 
+      width: 60px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    animation: spin 2s infinite ;
+   border: 6px dotted white;
+   border-color: white transparent white transparent;
+   
+}
+
+#box1{ width: 60px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    animation: move 2s infinite ;
+   border: 6px double white;
+   border-color: rgb(156, 31, 160) transparent rgb(129, 34, 141) transparent;
+   
+}
+
+#Loader{
+    display: none;
+}
+
+
+    
+
+
+@keyframes spin{
+    to {
+        transform: rotate(360deg);
+        
+    }
+
+}@keyframes move{
+    from{
+        transform: rotate(360deg);
+        
+    }
+
+}
